@@ -1,0 +1,26 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="template" template="/WEB-INF/jsp/main_template.jsp">
+		<put-attribute name="top" value="/WEB-INF/jsp/spitterForm.jsp"/>
+		<put-attribute name="side" value="/WEB-INF/jsp/signinsignup.jsp"/>
+	</definition>
+
+	<definition name="home" extends="template">
+	<put-attribute name="content" value="/WEB-INF/jsp/home.jsp"/>
+	</definition>
+
+<!-- 	<definition name="spittles/list" extends="template"> -->
+<!-- 		<put-attribute name="content" value="/WEB-INF/views/spittles/list.jsp" /> -->
+<!-- 	</definition> -->
+
+	<definition name="spitters/edit" extends="template">
+		<put-attribute name="content" value="/WEB-INF/jsp/edit.jsp" />
+	</definition>
+
+	<definition name="spitters/view" extends="template">
+		<put-attribute name="content" value="WEB-INF/views/jsp/view.jsp" />
+	</definition>
+</tiles-definitions>
