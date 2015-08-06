@@ -1,4 +1,3 @@
-@@ -1,59 +0,0 @@
 <%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form"%>
 <div>
 	<h2>Create a free spitter account</h2>
